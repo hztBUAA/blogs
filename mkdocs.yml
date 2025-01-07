@@ -2,3 +2,35 @@ site_name: hzt的小破站
 site_url: https://hztbuaa.github.io/blogs
 theme:
   name: material
+  features:
+    # - navigation.sections # 启用左侧大纲
+    # - navigation.footer
+    - navigation.tabs # 顶部显示导航顶层nav（也就是第一个节点）
+    - navigation.tabs.sticky # 滚动是隐藏顶部nav，需要配合navigation.tabs使用
+    - navigation.top # 一键回顶部
+    - search.suggest
+    - content.tabs.link
+    - content.code.annotate
+    - content.code.copy
+markdown_extensions:
+  - toc:
+      permalink: true
+
+  - pymdownx.highlight:
+      linenums: true
+    # - content.code.highlight
+    # - toc.integrate
+    # - toc.follow
+    # - navigation.path
+    # - navigation.indexes
+nav:
+  - Home: index.md
+  - About: about.md
+  - Articals:
+      - Articles/kmp算法.md
+      - Articles/test.md
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/hztBUAA

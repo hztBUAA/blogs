@@ -1,17 +1,10 @@
-# Welcome to MkDocs
+# 一些迷惑
+发现mkdocs主题 不支持第一个标题为一级标题 有点逆天 
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
 
-## Commands
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
 
-## Project layout
+## 我为什么要写这个
+自己生产了很多生活文字垃圾 想要通过这种方式倒逼自己进行垃圾回收 提取整理成有逻辑的博客
 
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+
