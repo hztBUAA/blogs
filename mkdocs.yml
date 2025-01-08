@@ -3,8 +3,6 @@ site_url: https://hztbuaa.github.io/blogs
 theme:
   name: material
   features:
-    # - navigation.sections # 启用左侧大纲
-    # - navigation.footer
     - navigation.tabs # 顶部显示导航顶层nav（也就是第一个节点）
     - navigation.tabs.sticky # 滚动是隐藏顶部nav，需要配合navigation.tabs使用
     - navigation.top # 一键回顶部
@@ -12,25 +10,27 @@ theme:
     - content.tabs.link
     - content.code.annotate
     - content.code.copy
-markdown_extensions:
-  - toc:
-      permalink: true
-
-  - pymdownx.highlight:
-      linenums: true
-    # - content.code.highlight
-    # - toc.integrate
-    # - toc.follow
-    # - navigation.path
-    # - navigation.indexes
 nav:
-  - Home: index.md
-  - About: about.md
-  - Articals:
-      - Articles/kmp算法.md
-      - Articles/test.md
+  - 主页: index.md
+  - 关于我: about.md
+  - 技术:
+      - 大模型应用: Articles/大模型应用相关知识.md
+      - 全栈: Articles/全栈相关知识.md
+      - 深度学习工具: Articles/深度学习相关知识.md
+      - linux大杂烩: Articles/linux相关知识.md
+  - 生活:
+      - 首页: life/index.md
 
 extra:
   social:
     - icon: fontawesome/brands/github
       link: https://github.com/hztBUAA
+
+# Strategy: Use an absolute path
+markdown_extensions:
+  - attr_list
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+plugins:
+  - mkdocs-pdf
